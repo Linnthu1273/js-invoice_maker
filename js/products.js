@@ -25,4 +25,9 @@ let products = [
         name : "Grape",
         price : 2000
     },
+    {
+        barcode : 15,
+        name : "Spoon",
+        price : 1500
+    },
 ];

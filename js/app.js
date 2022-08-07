@@ -7,12 +7,21 @@ let addBtn = document.querySelector('#addBtn');
 let inputForm = document.querySelector('#inputForm');
 let rows = document.querySelector('#rows');
 let total = document.querySelector('#total');
+let tax = document.querySelector('#tax');
+let net = document.querySelector('#net');
 
 //function
 
     function calcTotal(){
         let costs = document.querySelectorAll('.cost');
         total.innerText = [...costs].reduce((pv,cv)=>pv+ Number(cv.innerText),0);
+        console.log(total.innerText);
+        let  taxs = Number(total.innerText) * (5/100);
+        console.log(taxs);
+        tax.innerText = taxs;
+
+        let netTotal = Number(total.innerText) + taxs;
+        net.innerText = netTotal;
         
 
     }
