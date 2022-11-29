@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Padauk:wght@400;700&display=swap');
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+$font-family-sans-serif : 'Montserrat', 'Padauk', sans-serif;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.delBtn{
+    display: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#rows tr:hover{
+    transition: .4s;
+    cursor: pointer;
+}
+#rows tr:hover .delBtn{
+        display: block;
+        
+}
